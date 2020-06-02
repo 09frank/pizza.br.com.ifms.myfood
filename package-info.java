@@ -1,13 +1,11 @@
 /**
  * @author Frank 
- * Acesando o pacote jpaUtilDAO.
+ * Acesando o pacote model.
  */
-package br.com.testeif.jpaUtilDAO;
-// https://www.youtube.com/watch?v=DN8Jh-xdejU
+package br.com.testeif.model;
 /**
- * @author Frank 
- * O pacote jpaUtilDAO serve
- * para gerenciar os dados
- * para o banco e tambem 
- * cria o banco de dados.
+ * @author Frank
+ * O pacote model serve para 
+ * criar e gerencia os atributos do
+ * sistema java para o banco de dados.
  */
