@@ -1,21 +1,12 @@
 /**
  * @author Frank 
- * Acesando o pacote app.
+ * Acesando o pacote controller.
  */
-package br.com.testeif.app;
+package br.com.testeif.controller;
 /**
  * @author Frank
- * Serve como um instrução de como 
- * o banco tem que ser criado.
- */
-/* SQL
-CREATE SCHEMA `pizza_ifmss` DEFAULT CHARACTER SET utf8 ;
-drop database pizza_ifms;
-create database pizza_ifms;
-*/
-/**
- * @author Frank
- * O pacote app serve como um 
- * iniciador do projeto
- * durante criação do programa, 
+ * O pacote controller serve
+ * para pegar os dados da telas,
+ * joga os dados para o JPAUtilDAO antes de 
+ * envia-los para o banco de dados. 
  */
