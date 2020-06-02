@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.testeif</groupId>
+	<artifactId>br.com.testeif</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>br.com.testeif</name>
+	<description>restaurante</description>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.4.3.Final</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.19</version>
+			<scope>provided</scope>
+			<!-- <version>5.1.47 / 8.0.19</version> -->
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.common</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>5.1.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.spec.javax.transaction</groupId>
+			<artifactId>jboss-transaction-api_1.2_spec</artifactId>
+			<version>1.1.1.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.logging</groupId>
+			<artifactId>jboss-logging</artifactId>
+			<version>3.4.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.common</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>5.1.0.Final</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.sun.faces/jsf-impl -->
+		<dependency>
+			<groupId>com.sun.faces</groupId>
+			<artifactId>jsf-impl</artifactId>
+			<version>2.2.20</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.sun.faces/jsf-api -->
+		<dependency>
+			<groupId>com.sun.faces</groupId>
+			<artifactId>jsf-api</artifactId>
+			<version>2.2.20</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.primefaces/primefaces -->
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>8.0</version>
+		</dependency>
+	</dependencies>
+</project>
