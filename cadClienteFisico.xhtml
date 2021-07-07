@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<title>Cadastro de Cliente Fisico</title>
+</head>
+<body>
+	<h2>Clientes</h2>
+	<h:form>
+		<h:outputLabel value="Nome :" />
+		<h:inputText value="#{cliente_Bean.cliente.Nome}" required="true" />
+
+		<h:outputLabel value="Endereco :" />
+		<h:inputText value="#{cliente_Bean.cliente.Endereco}" required="true" />
+
+		<h:outputLabel value="e-mail :" />
+		<h:inputText value="#{cliente_Bean.cliente.email}" required="true" />
+
+		<h:outputLabel value="Telefone :" />
+		<h:inputText value="#{cliente_Bean.cliente.Fone}" required="true" />
+
+		<h:outputLabel value="Data Nascimento :" />
+		<h:inputText value="#{cliente_Bean.cliente.dataNasc}" required="true" />
+
+		<h:outputLabel value="CPF :" />
+		<h:inputText value="#{cliente_Bean.cliente.cpf_pf}" required="true" />
+
+		<h:outputLabel value="RG :" />
+		<h:inputText value="#{cliente_Bean.cliente.rg}" required="true" />
+
+		<h:panelGrid>
+			<h:commandButton action="#{cliente_Bean.addCliente()}" value="Salvar" />
+			<h:messages showDetail="true" showSummary="false" />
+		</h:panelGrid>
+
+	</h:form>
+</body>
+</html>

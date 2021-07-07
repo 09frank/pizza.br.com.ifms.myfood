@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:mj="http://mojarra.dev.java.net/mojarra_ext">
+
+<h:head>
+	<h:title>Vendas</h:title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:outputLabel value="data :" />
+		<h:txtfield value="#{vendas_Bean.v.data}" />
+		<h:outputLabel value="hora :" />
+		<h:txtfield value="#{vendas_Bean.v.hora}" />
+		<h:outputLabel value="total_venda :" />
+		<h:txtfield value="#{vendas_Bean.v.total_venda}" />
+		<h:outputLabel value="mesa :" />
+		<h:txtfield value="#{vendas_Bean.v.mesa}" />
+		<h:outputLabel value="clientes :" />
+		<h:txtfield value="#{vendas_Bean.v.clientes}" />
+		<h:outputLabel value="itens :" />
+		<h:txtfield value="#{vendas_Bean.v.itens}" />
+		<h:commandButton action="#{{vendas_Bean.addVendas()}" value="Salvar" />
+		<h:messages showDetail="true" showSummary="false" />
+	</h:form>
+</h:body>
+</html>

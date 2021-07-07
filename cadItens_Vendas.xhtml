@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:mj="http://mojarra.dev.java.net/mojarra_ext">
+
+<h:head>
+	<h:title>Itens Vendas</h:title>
+</h:head>
+<h:body>
+	<h:form>
+	
+		<h:outputLabel value="qtd :" />
+		<h:txtfield value="#{itens_vendas_Bean.iv.qtd}" />
+		<h:outputLabel value="produtos :" />
+		<h:txtfield value="#{itens_vendas_Bean.iv.produtos}" />
+		<h:panelGrid>
+		<h:commandButton action="#{itens_vendas_Bean.addItens_vendas()}" value="Salvar" />
+		<h:messages showDetail="true" showSummary="false" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>
